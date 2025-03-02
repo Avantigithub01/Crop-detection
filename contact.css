@@ -1,0 +1,108 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117; /* Darker background */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    background: #161b22; /* Blackish grey */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #58a6ff;
+}
+
+/* Grid Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Contact Form and Info */
+.contact-form, .contact-info {
+    background: #21262d; /* Blackish grey */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form:hover, .contact-info:hover {
+    transform: scale(1.05);
+}
+
+/* Input Fields */
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input, textarea {
+    background: #30363d;
+    color: white;
+    border: 1px solid #58a6ff;
+}
+
+/* Button */
+button {
+    background: #58a6ff;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    
+}
+
+button:hover {
+    background: #1f6feb;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #1f6feb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

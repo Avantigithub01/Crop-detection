@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <header class="header">
+        <h5>Crop Disease Detection System</h5>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted class="background-video">
+            <source src="farm.mp4" type="video/mp4">
+        </video>
+        <div class="background-overlay">
+            <p>Ensuring Healthy Crops with Advanced Detection</p>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <img src="https://c.wallhere.com/photos/a2/9d/wheat_field_crops_plants-206698.jpg!d" alt="Crop Image 1">
+                <img src="https://images.pexels.com/photos/6216870/pexels-photo-6216870.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Crop Image 2">
+                <img src="https://geneticliteracyproject.org/wp-content/uploads/2018/03/corn-3-14-18-1.jpg" alt="Crop Image 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- New Animated Section with 3 Boxes -->
+    <section class="info-section">
+        <div class="info-box animate">
+            <h3>How to Use</h3>
+            <p>1. Upload a crop image.<br>2. Get instant disease analysis.<br>3. Receive treatment recommendations.</p>
+        </div>
+        <div class="info-box animate">
+            <h3>Features</h3>
+            <p>✔ AI-powered detection<br>✔ Instant recommendations<br>✔ Crop health tracking</p>
+        </div>
+        <div class="info-box animate">
+            <h3>Future Enhancements</h3>
+            <p>🔹 Real-time disease monitoring<br>🔹 Weather-based analysis<br>🔹 Multi-language support</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h2>Detect Crop Diseases Instantly</h2>
+        <p>Upload an image of your crop and get instant analysis and recommendations.</p>
+        <a href="home.html" class="btn">Get Started</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Crop Disease Detection System. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Animation for info-section boxes
+        document.addEventListener("DOMContentLoaded", function () {
+            let infoBoxes = document.querySelectorAll(".info-box");
+            let observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            });
+
+            infoBoxes.forEach(box => observer.observe(box));
+        });
+    </script>
+</body>
+</html>

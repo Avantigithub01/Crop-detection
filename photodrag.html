@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection</title>
+    <link rel="stylesheet" href="photodrag.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1><i class="fas fa-leaf"></i> Crop Disease Detection</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Crop Details Section -->
+        <div class="crop-details">
+            <h2>Enter Crop Details</h2>
+            <form>
+                <label for="crop-name">Crop Name:</label>
+                <input type="text" id="crop-name" placeholder="Enter crop name" required>
+
+                <label for="planting-time">Planting Time:</label>
+                <input type="text" id="planting-time" placeholder="E.g., June - September" required>
+
+                <label for="health-status">Current Health Status:</label>
+                <select id="health-status">
+                    <option value="healthy">Healthy</option>
+                    <option value="minor-issues">Minor Issues</option>
+                    <option value="severe">Severe Disease Signs</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-box">
+            <h2>Example</h2>
+            <div class="upload-area">
+                <a href="result.html"><i class="fas fa-upload"></i> Click to Upload or Drag & Drop</a>
+                <p class="sub-text">Supported formats: PNG, JPG (Max: 10MB)</p>
+            </div>
+        </div>
+
+    
+
+        <div class="upload-box">
+            <h2>Upload Image</h2>
+            <div class="upload-area" onclick="document.getElementById('fileInput').click();">
+                <i class="fas fa-upload"></i> Click to Upload or Drag & Drop
+                <p class="sub-text">Supported formats: PNG, JPG (Max: 10MB)</p>
+            </div>
+            <!-- Hidden file input -->
+            <input type="file" id="fileInput" accept="image/png, image/jpeg" style="display: none;">
+        </div>
+
+
+
+
+
+
+
+        <!-- Recommendations -->
+        <div class="recommendation-box">
+            <h3><span class="check-icon">✔</span> Recommendations</h3>
+            <ul>
+                <li><i class="fas fa-spray-can"></i> Apply fungicide treatment</li>
+                <li><i class="fas fa-wind"></i> Improve air circulation</li>
+                <li><i class="fas fa-trash-alt"></i> Remove infected leaves</li>
+                <li><i class="fas fa-user-md"></i> Consult with an agricultural expert</li>
+            </ul>
+        </div>
+
+    </main>
+
+</body>
+</html>

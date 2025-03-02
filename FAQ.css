@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #090c0f, #0e0f0f);
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover, .active {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: url('faq-banner.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* FAQ Section */
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Different Section Backgrounds */
+.tech-section {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* FAQ Items */
+.faq {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.faq input {
+    display: none;
+}
+
+.faq-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.faq-label i {
+    color: #ff9800;
+    font-size: 22px;
+}
+
+/* Expand Answer When Checkbox is Checked */
+.faq input:checked + .faq-label + .faq-answer {
+    max-height: 300px;
+    padding: 10px;
+}
+
+/* Images */
+.faq-answer img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Back to Home Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: white;
+    background: #ff3d00;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+}

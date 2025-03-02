@@ -1,0 +1,165 @@
+/* ======= General Styles ======= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Full Page View */
+    background: #000000; /* Light Grey Background */
+}
+body {
+    background-image: url('https://images.pexels.com/photos/1226302/pexels-photo-1226302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ======= Full-Page Background ======= */
+.background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('wheat-field.jpg') no-repeat center center/cover;
+    z-index: -1; /* Sends background behind everything */
+}
+
+/* ======= Login Container ======= */
+.login-container {
+    background: rgb(161, 194, 155); /* White Box */
+    padding: 40px;
+    width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    animation: popUp 1.2s ease-in-out;
+}
+
+/* Pop-up Animation */
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ======= Heading ======= */
+.login-container h2 {
+    color: #2E7D32; /* Green Heading */
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Slide-in Animation for Heading */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-container p {
+    font-size: 14px;
+    color: #666; /* Dark Grey Text */
+    margin-bottom: 20px;
+}
+
+/* ======= Input Fields ======= */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333; /* Darker Label Text */
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Glowing Effect on Focus */
+.input-group input:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.4);
+}
+
+/* ======= Login Button ======= */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Button Hover Effect */
+.login-btn:hover {
+    background: #45a049;
+    transform: scale(1.08);
+    box-shadow: 0px 8px 15px rgba(76, 175, 80, 0.5);
+}
+
+/* ======= Extra Links ======= */
+.extra-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+/* Links Hover Animation */
+.extra-links a {
+    color: #2E7D32; /* Green Links */
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Underline Animation */
+.extra-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4CAF50;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.extra-links a:hover::after {
+    width: 100%;
+}
+
+.extra-links a:hover {
+    transform: scale(1.08);
+}

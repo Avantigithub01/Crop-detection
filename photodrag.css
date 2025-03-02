@@ -1,0 +1,138 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px 0;
+    box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.3);
+    border-bottom: 3px solid #FFD700;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #FFD700;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Main Container */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 6px 25px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Crop Details Section */
+.crop-details {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.crop-details h2 {
+    color: #FFD700;
+}
+
+.crop-details label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.crop-details input, 
+.crop-details select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Upload Box */
+.upload-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.upload-area {
+    border: 2px dashed #FFD700;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.upload-area a {
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #DDDDDD;
+}
+
+/* Result Box */
+.result-box {
+    background: rgba(58, 74, 55, 0.9);
+    padding: 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 12px rgba(255, 100, 0, 0.3);
+}
+
+.disease-name {
+    color: #FF4500;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Recommendation Box */
+.recommendation-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.2);
+}
+
+.recommendation-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recommendation-box li {
+    margin: 10px 0;
+    color: #DDDDDD;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

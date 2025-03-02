@@ -1,0 +1,256 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background: rgba(30, 30, 30, 0.9);
+    padding: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 0, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* Container */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 6px 25px rgba(0, 255, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Results Box */
+.results-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Crop Image */
+.image-section .crop-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 255, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-section .crop-image:hover {
+    transform: scale(1.05);
+}
+
+/* Diagnosis Section */
+.diagnosis-section h2 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+}
+
+/* Icons */
+.icon {
+    width: 28px;
+    margin-right: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Diagnosis Details */
+.diagnosis-details {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 12px rgba(255, 255, 255, 0.2);
+    animation: glow 2s infinite alternate;
+    font-size: 16px;
+}
+
+.diagnosis-details span {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Possible Diseases */
+.possible-diseases {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.disease-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.disease-item {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.disease-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Suggested Treatments */
+.treatments {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.treatments ul {
+    list-style: none;
+    padding: 0;
+}
+
+.treatments li {
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.treatments li:hover {
+    transform: translateX(8px);
+}
+
+/* Environmental Factors */
+.environmental-factors {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.factor-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.factor-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.factor-item:hover {
+    color: #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Buttons */
+.button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #00ffcc;
+    color: #0f2027;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #00ddaa;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes glow {
+    0% { box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2); }
+    100% { box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.6); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Apply animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+.animate-glow {
+    animation: glow 2s infinite alternate;
+}
+
+.bounce {
+    animation: bounce 1.5s infinite;
+}
+
+.rotate {
+    animation: rotate 3s linear infinite;
+}
+
+/* Hover Effects */
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.factor-item:hover {
+    color: #00ffcc;
+    transition: color 0.3s ease-in-out;
+}
